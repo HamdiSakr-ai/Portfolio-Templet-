@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <a href="#cover">Cover</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+
+    <!-- Content -->
+    <main class="content">
+      
+      <!-- Cover Section -->
+      <section id="cover" class="section">
+        <h2>Cover</h2>
+        <label>Upload your photo:</label>
+        <input type="file" accept="image/*" id="cover-image-input" />
+        <img id="cover-image-preview" src="" alt="" style="display:none;" />
+        <input type="text" placeholder="Full Name" id="full-name" />
+        <textarea placeholder="What makes you different?" id="about-me"></textarea>
+      </section>
+      
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2>About</h2>
+        <textarea placeholder="Tell us about yourself" id="about-description"></textarea>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <textarea placeholder="List your skills" id="skills-list"></textarea>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <textarea placeholder="Education history" id="education-history"></textarea>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <textarea placeholder="Previous work experience" id="work-experience"></textarea>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <input type="text" placeholder="Project title" id="project-title">
+        <textarea placeholder="Project description" id="project-description"></textarea>
+        <label>Project image:</label>
+        <input type="file" accept="image/*" id="project-image">
+        <button id="add-project-btn">Add Project</button>
+        <div id="projects-list"></div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+        <textarea placeholder="Feedback from people" id="testimonials-feedback"></textarea>
+      </section>
+
+      <!-- Contacts Section -->
+      <section id="contacts" class="section">
+        <h2>Contacts</h2>
+        <input type="email" placeholder="Email" id="contact-email">
+        <input type="text" placeholder="LinkedIn" id="contact-linkedin">
+        <input type="text" placeholder="GitHub" id="contact-github">
+        <input type="number" placeholder="Phone" id="contact-phone">
+      </section>
+
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
